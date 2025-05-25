@@ -1,0 +1,173 @@
+main {
+  font-family: "Montserrat", -apple-system, sans-serif;
+  color: #171f55;
+
+  padding: 1rem;
+
+  h1 {
+    padding: 3.75vw;
+    font-size: 4vw;
+    line-height: 1.3;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form {
+    padding: 0 3.75vw;
+
+    h2 {
+      padding: 2rem 0;
+    }
+
+    section:first-of-type {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        display: none;
+      }
+
+      select,
+      ::picker(select) {
+        appearance: base-select;
+      }
+
+      select {
+        flex: 1;
+      }
+      select {
+        border: 2px solid #ddd;
+        background: #eee;
+        padding: 10px;
+        transition: 0.4s;
+      }
+
+      select:hover,
+      select:focus {
+        background: #ddd;
+      }
+      select::picker-icon {
+        color: #999;
+        transition: 0.4s rotate;
+      }
+      select:open::picker-icon {
+        rotate: 180deg;
+      }
+      ::picker(select) {
+        border: none;
+      }
+      option {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+
+        border: 2px solid #ddd;
+        background: #eee;
+        padding: 10px;
+        transition: 0.4s;
+      }
+
+      option:first-of-type {
+        border-radius: 8px 8px 0 0;
+      }
+
+      option:last-of-type {
+        border-radius: 0 0 8px 8px;
+      }
+
+      option:not(option:last-of-type) {
+        border-bottom: none;
+      }
+
+      option:nth-of-type(odd) {
+        background: #fff;
+      }
+
+      option:hover,
+      option:focus {
+        background: plum;
+      }
+
+      option:checked {
+        font-weight: bold;
+      }
+
+      ::picker(select) {
+        opacity: 0;
+        transition: all 0.4s allow-discrete;
+      }
+
+      ::picker(select):popover-open {
+        opacity: 1;
+      }
+
+      @starting-style {
+        ::picker(select):popover-open {
+          opacity: 0;
+        }
+      }
+    }
+
+    section:nth-of-type(2) {
+      fieldset {
+        border: none;
+
+        legend {
+          display: none;
+        }
+
+        .buttons {
+          display: flex;
+          gap: 1rem;
+          padding: 0 0 1rem 0;
+        }
+
+        .checkbox {
+          display: flex;
+          gap: 0.5rem;
+          padding: 0.2rem;
+
+          input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+            padding: 0.5rem;
+            border: 2px solid #ddd;
+            background: #eee;
+            border-radius: 6px;
+          }
+
+          input[type="checkbox"]:checked {
+            background: plum;
+          }
+        }
+      }
+    }
+
+    section:last-of-type {
+      button {
+        font-size: 1.5rem;
+      }
+    }
+
+    button {
+      padding: 0.5rem;
+      border: 2px solid #ddd;
+      background: #eee;
+      border-radius: 8px;
+
+      color: #171f55;
+    }
+
+    button:hover,
+    button:focus {
+      background: plum;
+    }
+  }
+}

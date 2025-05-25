@@ -1,0 +1,11 @@
+{
+  "/api": {
+    "target": "https://www.digimoncard.io/api-public",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

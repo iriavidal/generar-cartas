@@ -1,59 +1,118 @@
-# GenerarCartas
+# Generador JSON de cartas - Digimon TCG
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
+> 🇪🇸 Proyecto personal para generar listados en JSON de cartas pertenecientes a una caja del TCG de Digimon, incluyendo cartas normales y alternativas.  
+> 🇬🇧 Personal project to generate JSON listings of cards from a Digimon TCG box, including both regular and alternative cards.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🧩 ¿Qué es este proyecto? / What is this project?
 
-```bash
-ng serve
-```
+🇪🇸 Este generador permite seleccionar una caja (por ejemplo, BT14) del juego de cartas coleccionables **Digimon TCG** y obtener un archivo JSON con todas las cartas disponibles, solo con los datos que necesitas, pudiendo modificarlos a mano y añadir los datos extra que necesites.  
+Esto soluciona una limitación común en algunas APIs públicas, que no siempre incluyen toda la información deseada o no permiten una personalización del formato.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🇬🇧 This generator allows you to select a box (e.g., BT14) from the **Digimon TCG** and get a JSON file with all the available cards, containing only the data you need. You can easily edit the file manually and add any extra data you want.  
+It solves a common limitation of some public APIs, which often do not include all the desired information or do not allow full customization of the format.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ⚙️ ¿Cómo clonar y ejecutar el proyecto? / How to clone and run the project
 
-```bash
-ng generate component component-name
-```
+### 🇪🇸 En español:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. Asegúrate de tener instalado **Node.js**.
+2. Clona este repositorio:
+   ```bash
+   git clone https://github.com/iriavidal/generar-cartas
+   ```
+3. Entra en el directorio del proyecto:
+   ```bash
+   cd generar-cartas
+   ```
+4. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+5. Ejecuta el proyecto:
+   ```bash
+   npm start
+   ```
+6. Abre tu navegador en http://localhost:4200.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+### 🇬🇧 In English:
 
-To build the project run:
+1. Make sure you have Node.js installed.
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/iriavidal/generar-cartas
+   ```
+3. Go to the project folder:
+   ```bash
+   cd generar-cartas
+   ```
+4. Install the dependencies:
+   ```bash
+    npm install
+   ```
+5. Run the project:
+   ```bash
+   npm start
+   ```
+6. Open your browser at http://localhost:4200.
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🚀 ¿Cómo se usa? / How to use it
 
-## Running unit tests
+### 🇪🇸 En español:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. **Selecciona la caja** del desplegable (por ejemplo, BT14).
+2. **Elige los campos** que deseas incluir en el JSON.
+3. Haz clic en **"Generar JSON"**.
+4. El archivo se descargará automáticamente.
 
-```bash
-ng test
-```
+> 📝 El archivo JSON es editable y puedes adaptarlo a tus necesidades.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+### 🇬🇧 In English:
 
-```bash
-ng e2e
-```
+1. **Select the box** from the dropdown (e.g., BT14).
+2. **Choose the fields** you want to include in the JSON file.
+3. Click on **"Generate JSON"**.
+4. The file will be downloaded automatically.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+> 📝 The JSON file is editable and can be customized to fit your needs.
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🤝 Contribuciones / Contributions
+
+🇪🇸 ¡Cualquier sugerencia, mejora o reporte de errores es más que bienvenida!  
+Puedes abrir una **issue**, enviar un **pull request** o simplemente dejar un comentario.
+
+🇬🇧 Any suggestions, improvements, or bug reports are more than welcome!  
+Feel free to open an **issue**, submit a **pull request**, or leave a comment.
+
+---
+
+## 👩‍💻 Autora / Author
+
+**🇪🇸 Desarrollado por Iria Vidal.**  
+Actualmente trabajando en su portfolio personal.
+
+**🇬🇧 Developed by Iria Vidal.**  
+Currently working on her personal portfolio.
+
+---
+
+## 🪪 Licencia
+
+🇪🇸 Este proyecto está bajo la licencia [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.es), lo que significa que puedes usarlo, copiarlo, modificarlo y compartirlo libremente **siempre que no tenga fines comerciales** y se dé el crédito correspondiente.  
+No está permitido revender el código ni utilizarlo en productos o servicios de pago.
+
+🇬🇧 This project is licensed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), which means you are free to use, copy, modify, and share it **as long as it is not for commercial purposes** and proper credit is given.  
+Reselling the code or using it in paid products or services is not allowed.
+
+---
